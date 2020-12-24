@@ -27,9 +27,9 @@ print("Результат 'n + nn + nnn' равен: ", total)
 n = abs(int(input("Введите число ")))
 max = n % 10
 n = n // 10
-while n > 0:
+while n >= 1:
     if n % 10 > max:
-        m = n % 10
+        max = n % 10
     n = n // 10
 print("Максимальная цифра в числе", max)
 
